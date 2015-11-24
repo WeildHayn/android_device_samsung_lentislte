@@ -50,5 +50,5 @@
          to indicate default value -->
     <int name="maxMessageTextSize">-1</int>
     <!-- User-Agent parameter used in MMS http request -->
-    <string name="userAgent">trlte</string>
+    <string name="userAgent">lentislte</string>
 </mms_config>

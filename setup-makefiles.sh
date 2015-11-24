@@ -234,7 +234,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter trlte lentislte,\$(TARGET_DEVICE)),)
+ifneq (\$(filter lentislte lentislte,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libmm-abl
