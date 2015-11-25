@@ -1,2 +1,2 @@
-add_lunch_combo cm_lentislte-eng
+add_lunch_combo slim_lentislte-eng
 
