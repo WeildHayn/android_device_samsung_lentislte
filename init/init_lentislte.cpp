@@ -28,6 +28,7 @@
  */
 
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "vendor_init.h"
 #include "property_service.h"
@@ -35,6 +36,12 @@
 #include "util.h"
 
 #include "init_msm.h"
+
+void gsm_properties()
+{
+    property_set("telephony.lteOnGsmDevice", "1");
+    property_set("ro.telephony.default_network", "9");
+}
 
 void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *board_type)
 {
@@ -53,8 +60,8 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    property_set("ro.build.fingerprint", "samsung/lentislteskt/lentislteskt:5.0.1/LRX22C/G906SKSU1BOI5:user/release-keys");
-    property_set("ro.build.description", "lentislteskt-user 5.0.1 LRX22C G906SKSU1BOI5 release-keys");
+    property_set("ro.build.fingerprint", "samsung/lentislteskt/lentislteskt:6.0/MRA58K/G906SKSU1BOI5:user/release-keys");
+    property_set("ro.build.description", "lentislteskt-user 6.0 MRA58K G906SKSU1BOI5 release-keys");
     property_set("ro.product.model", "SM-G906S");
     property_set("ro.product.device", "lentislte");
     gsm_properties();
@@ -62,10 +69,4 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
     INFO("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
-}
-
-void gsm_properties()
-{
-    property_set("telephony.lteOnGsmDevice", "1");
-    property_set("ro.telephony.default_network", "9");
 }
