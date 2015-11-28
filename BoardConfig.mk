@@ -78,7 +78,7 @@ BOARD_HARDWARE_CLASS += hardware/samsung/cmhw
 BOARD_HARDWARE_CLASS += device/samsung/lentislte/cmhw
 
 # Display
-BOARD_EGL_CFG := device/samsung/lentislte-common/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/lentislte/configs/egl.cfg
 OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
@@ -120,7 +120,7 @@ TARGET_BOARD_PLATFORM := apq8084
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno420
 USE_CLANG_PLATFORM_BUILD := true
 
-# Power HAL not specified, we're using the one in lentislte-common instead.
+# Power HAL not specified.
 
 # Qualcomm support
 COMMON_GLOBAL_CFLAGS += -DQCOM_BSP
