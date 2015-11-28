@@ -46,7 +46,7 @@ TARGET_KERNEL_MODULES += WLAN_MODULES
 # Init
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/lentislte/init/init_lentislte.c
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/lentislte/init/init_lentislte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Audio
