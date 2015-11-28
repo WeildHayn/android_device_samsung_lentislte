@@ -101,8 +101,7 @@ PRODUCT_PACKAGES += \
     copybit.apq8084 \
     gralloc.apq8084 \
     hwcomposer.apq8084 \
-    memtrack.apq8084 \
-    libboringssl-compat
+    memtrack.apq8084
 
 # Doze service
 PRODUCT_PACKAGES += \

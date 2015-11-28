@@ -6,9 +6,5 @@
   {
     "repository": "android_kernel_samsung_lentislte",
     "target_path": "kernel/samsung/lentislte"
-  },
-  {
-    "repository": "android_external_sony_boringssl-compat",
-    "target_path": "external/sony/boringssl-compat"
   }
 ]
