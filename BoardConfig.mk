@@ -196,4 +196,4 @@ ifeq ($(HOST_OS),linux)
     endif
   endif
 endif
-
+EXPERIMENTAL_USE_JAVA8 := true
